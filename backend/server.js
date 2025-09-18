@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 connectDB();
 
-app.use(cors());
+
 app.use(cors({
   origin: [
     process.env.FRONTEND_URL // frontend Render URL
