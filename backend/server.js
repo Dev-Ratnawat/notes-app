@@ -7,15 +7,18 @@ const app = express();
 connectDB();
 
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://localhost:3000",
+  process.env.FRONTEND_URL
+].filter(Boolean); // removes undefined
+
 app.use(cors({
-  origin: [
-    "http://localhost:5173", // for Vite local dev
-    "http://localhost:3000", // for CRA local dev
-    process.env.FRONTEND_URL // frontend Render URL
-  ],
+  origin: allowedOrigins,
   methods: "GET,POST,PUT,DELETE",
   credentials: true
 }));
+
 app.use(express.json());
 
 app.use('/api/auth', require('./routes/auth'));
