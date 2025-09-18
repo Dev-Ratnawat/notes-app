@@ -11,7 +11,7 @@ app.use(cors({
   origin: [
     "http://localhost:5173", // for Vite local dev
     "http://localhost:3000", // for CRA local dev
-    "https://notes-app-3-rdzk.onrender.com" // frontend Render URL
+    process.env.FRONTEND_URL // frontend Render URL
   ],
   methods: "GET,POST,PUT,DELETE",
   credentials: true
