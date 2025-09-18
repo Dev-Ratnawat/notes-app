@@ -9,8 +9,6 @@ connectDB();
 app.use(cors());
 app.use(cors({
   origin: [
-    "http://localhost:5173", // for Vite local dev
-    "http://localhost:3000", // for CRA local dev
     process.env.FRONTEND_URL // frontend Render URL
   ],
   methods: "GET,POST,PUT,DELETE",
