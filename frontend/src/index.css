@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background:#f6f8fb; }
+.nav { display:flex; gap:10px; margin-bottom:20px; }
+.card { background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.08); margin-bottom:16px; }
+input, textarea { display:block; width:100%; padding:8px; margin:8px 0; }
+.notes-grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); gap:12px; }
+.note-card { background:#fff; padding:12px; border-radius:8px; }
+.note-actions { display:flex; gap:8px; margin-top:8px; }
+button { padding:8px 12px; border:0; border-radius:6px; cursor:pointer; background:#0b5fff; color:white; }
+button[onclick] {}
