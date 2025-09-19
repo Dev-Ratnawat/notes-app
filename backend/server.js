@@ -10,7 +10,7 @@ connectDB();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
-  process.env.FRONTEND_URL
+  "https://notes-app-2-t08q.onrender.com"
 ].filter(Boolean); // removes undefined
 
 app.use(cors({
